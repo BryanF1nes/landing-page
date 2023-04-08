@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    background: url(/landing-page/img/beach.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: relative;
+    width: 45%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+.gray-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gray-bg h2 {
+    font-size: 40px;
+    color: white;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+/* Sign Up Container */
+.sign-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.info-section {
+    max-width: 700px;
+    font-size: 19px;
+}
+
+.info-section h3 {
+    padding: 10px 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2em;
+}
+
+.form-section h2 {
+    padding: 10px 0px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    column-gap: 150px;
+}
+
+input, label {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.contain {
+    gap: 5px;
+}
+
+label {
+    padding: 5px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 200px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.316);
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid rgb(49, 129, 156);
+}
+
+button {
+    padding: 18px 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(49, 129, 156);
+    color: white;
+    font-size: 16px;
+    margin: 15px 0px;
+    cursor: pointer;
+    transition: transform 300ms ease-out;
+}
+
+button:hover {
+    transform: scale(0.9);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(49, 129, 156);
+}
+
+a:hover {
+    color:rgb(69, 165, 197);
+    text-decoration: underline;
+}
+
+p, a {
+    font-weight: 500;
+}
